@@ -11,6 +11,11 @@ h1,h3
 	text-align: center;
 }
 
+#barraNavegacionChica
+{
+	display: none;
+}
+
 .descripcion	
 {
 	text-align: justify;
@@ -160,7 +165,7 @@ footer
 
 @media screen and (max-width: 768px)
 {
-#cabeceraTitulo,#barraNavegacion,#divPrincipal,#pieDePagina	
+#cabeceraTitulo,#barraNavegacionGrande,#divPrincipal,#pieDePagina	
 {
 	display: none;
 }
@@ -169,3 +174,41 @@ footer
 	display: block;
 }
 }
+
+/*Pantallas chicas de pc*/
+@media screen and (max-width: 1195px)
+{
+
+.descripcion	
+{
+	font-size: small;
+}
+
+.iconoParrafo,#barraNavegacionGrande,#tituloLogo
+{
+	display: none;
+}
+
+#barraNavegacionChica
+{
+	display: block;
+}
+
+.contenidoPrincipal
+{
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+
+.logo
+{
+	height: 100px;
+	width: 100px;
+	margin-top: 0;
+
+}
+
+}
+
+/*Fin Pantallas chicas de pc*/
